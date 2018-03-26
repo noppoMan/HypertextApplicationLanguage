@@ -28,8 +28,13 @@ import PackageDescription
 let package = Package(
   name: "HypertextApplicationLanguage",
   targets: [
-      .target(name: "HypertextApplicationLanguage",
-          exclude: [
-            "Tests/HypertextApplicationLanguageTests/Fixtures",
-          ])]
+    .target(name: "HypertextApplicationLanguage",
+      exclude: [
+        "Tests/HypertextApplicationLanguageTests/Fixtures",
+      ]
+    ),
+    .testTarget(name: "HypertextApplicationLanguageTests",
+      dependencies: ["HypertextApplicationLanguage"]
+    )
+  ]
 )
