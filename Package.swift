@@ -1,3 +1,4 @@
+// swift-tools-version:4.1
 // HypertextApplicationLanguage Package.swift
 //
 // Copyright © 2017, Roy Ratcliffe, Pioneering Software, United Kingdom
@@ -26,7 +27,9 @@ import PackageDescription
 
 let package = Package(
   name: "HypertextApplicationLanguage",
-  exclude: [
-    "Tests/HypertextApplicationLanguageTests/Fixtures",
-  ]
+  targets: [
+      .target(name: "HypertextApplicationLanguage",
+          exclude: [
+            "Tests/HypertextApplicationLanguageTests/Fixtures",
+          ])]
 )

@@ -7,3 +7,8 @@ docs
 # can change it using the `--build-path` option.
 .build
 Packages
+
+# SwiftPM manages xcode config via the `generate-xcodeproj` command
+*.xcodeproj
+xcuserdata
+DerivedData/
