@@ -27,6 +27,9 @@ import PackageDescription
 
 let package = Package(
   name: "HypertextApplicationLanguage",
+  products: [
+    .library(name: "HypertextApplicationLanguage", targets: ["HypertextApplicationLanguage"])
+  ],
   targets: [
     .target(name: "HypertextApplicationLanguage",
       exclude: [
