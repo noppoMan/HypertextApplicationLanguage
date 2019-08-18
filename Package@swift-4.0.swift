@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:4.0
 // HypertextApplicationLanguage Package.swift
 //
 // Copyright © 2017, Roy Ratcliffe, Pioneering Software, United Kingdom
